@@ -1,4 +1,4 @@
-import { Character, CharactersResponse } from './character';
+import { Character, CharactersResponse } from '../../entities/character/model/types';
 
 const API_BASE = 'https://rickandmortyapi.com/api';
 

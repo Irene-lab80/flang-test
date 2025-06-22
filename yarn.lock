@@ -1551,8 +1551,10 @@ type-fest@^0.20.2:
 typedarray@^0.0.6:
   version "0.0.6"
 
-typescript@^4.5.5:
-  version "4.5.5"
+typescript@^5.8.3:
+  version "5.8.3"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz"
+  integrity sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"
