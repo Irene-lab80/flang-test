@@ -7,9 +7,7 @@ export const Header = () => {
     <header className={s.header}>
       <div className={s.content}>
         <nav>
-          <Link to="/" className="logo">
-            Rick and Morty
-          </Link>
+          <Link to="/">Rick and Morty</Link>
         </nav>
       </div>
     </header>

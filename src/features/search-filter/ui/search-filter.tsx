@@ -13,7 +13,7 @@ export const SearchFilter = ({
   };
 
   return (
-    <div className="filters">
+    <div>
       <input
         type="text"
         name="name"

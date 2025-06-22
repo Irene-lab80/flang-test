@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
+import { Character, CharactersResponse } from '../../entities/character/model/types';
 import { CharacterCard } from '../../entities/character/ui/character-card';
 import { SearchFilter } from '../../features/search-filter';
 import { Pagination } from '../../features/search-filter/pagination';
 import { getCharacters } from '../../shared/api/base';
-import { Character, CharactersResponse } from '../../shared/api/character';
 import s from './character-list.module.css';
 
 export const CharacterListPage = () => {

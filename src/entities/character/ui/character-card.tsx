@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { Character } from '../../../shared/api/character';
+import { Character } from '../model/types';
 import s from './character-card.module.css';
 
 export const CharacterCard = ({ character }: { character: Character }) => {
