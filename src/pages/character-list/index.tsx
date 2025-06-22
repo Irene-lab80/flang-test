@@ -13,7 +13,12 @@ export const CharacterListPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [page, setPage] = useState(1);
-  const [filters, setFilters] = useState({ name: '', status: '' });
+  const [filters, setFilters] = useState({
+    name: '',
+    status: '',
+    species: '',
+    gender: '',
+  });
 
   useEffect(() => {
     const loadCharacters = async () => {

@@ -22,3 +22,10 @@ export type CharactersResponse = {
   };
   results: Character[];
 };
+
+export type Filters = {
+  name: string;
+  status: string;
+  species: string;
+  gender: string;
+};

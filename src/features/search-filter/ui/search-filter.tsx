@@ -1,10 +1,13 @@
+import { Filters } from '../../../entities/character/model/types';
+import { Select } from '../../../shared';
+
 export const SearchFilter = ({
   onFilterChange,
   filters,
   resetPage,
 }: {
-  onFilterChange: (filters: { name: string; status: string }) => void;
-  filters: { name: string; status: string };
+  onFilterChange: (filters: Filters) => void;
+  filters: Filters;
   resetPage: () => void;
 }) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -21,12 +24,41 @@ export const SearchFilter = ({
         value={filters.name}
         onChange={handleChange}
       />
-      <select name="status" value={filters.status} onChange={handleChange}>
-        <option value="">All Status</option>
-        <option value="alive">Alive</option>
-        <option value="dead">Dead</option>
-        <option value="unknown">Unknown</option>
-      </select>
+      <Select
+        name="status"
+        value={filters.status}
+        onChange={handleChange}
+        options={[
+          { value: '', label: 'All' },
+          { value: 'alive', label: 'Alive' },
+          { value: 'dead', label: 'Dead' },
+          { value: 'unknown', label: 'Unknown' },
+        ]}
+      />
+      <Select
+        name="species"
+        value={filters.species}
+        onChange={handleChange}
+        options={[
+          { value: '', label: 'All' },
+          { value: 'human', label: 'Human' },
+          { value: 'alien', label: 'Alien' },
+          { value: 'humanoid', label: 'Humanoid' },
+          { value: 'robot', label: 'Robot' },
+        ]}
+      />
+      <Select
+        name="gender"
+        value={filters.gender}
+        onChange={handleChange}
+        options={[
+          { value: '', label: 'All' },
+          { value: 'female', label: 'Female' },
+          { value: 'male', label: 'Male' },
+          { value: 'genderless', label: 'Genderless' },
+          { value: 'unknown', label: 'Unknown' },
+        ]}
+      />
     </div>
   );
 };
